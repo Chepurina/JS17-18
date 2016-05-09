@@ -1,0 +1,88 @@
+/* =Styles for the lab
+-------------------------------------------------------------- */
+#wrapper {
+	width:600px;
+}
+
+nav {
+	
+	width:330px;
+	background-color:rgb(0,120,214);
+	padding:5px 0;
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+
+}
+
+/* sub navigation */
+nav li ul {    
+    background-color:rgb(0,120,214);
+    position:absolute;
+    left:0;
+    top:30px; /* make this equal to the line-height of the links (specified below) */
+    width:170px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:170px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+
+/* style all links */
+nav a {
+    line-height:30px;
+    padding:0 5px;
+    margin:0 5px;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:#99ccff;
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px white;
+    margin:0 2px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 16px;
+	 
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 10px;
+    background-repeat:no-repeat;
+}

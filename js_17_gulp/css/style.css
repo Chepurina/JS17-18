@@ -1,0 +1,128 @@
+body {
+   
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    color: #4E443C;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	height: 1000px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-weight: normal;
+	text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+h2, h2 a {
+    color: #F14E32;
+}
+
+h3, h3 a {
+  color: #0388A6;
+}
+
+a {
+  color: #0388A6;
+}
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+    max-width: 620px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+
+/*checkbox*/
+.ch{
+	margin: 20px 225px;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+	margin: 50px auto;
+}
+
+label{
+    cursor: pointer;
+}
+
+label:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox-2.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+
+input[type=checkbox]:checked + label:after {
+	background-position: 0 -17px;
+}
+
+label:hover:after {
+	background-position: 0 -34px;
+}
+
+input[type=checkbox]:checked + label:hover:after {
+	background-position: 0 -51px;
+}
+
+/*checkbox jquery*/
+form {
+	margin: 12px 189px;
+	
+}
+
+form span {
+	margin-left: 15px;
+}
+
+.main{
+	margin-top: -5px;
+}
+.niceCheck {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../img/checkbox.png);
+	overflow: hidden;
+}
+
+.niceChecked {
+	background-position: 0 -17px;
+}
+
+.niceCheck input {
+	margin-left: -100px;
+}
+
+
+
+.content-box{
+	background: #99CCFF;
+	margin: -40px auto;
+	width: 600px;
+	padding-top: 10px;
+	padding-bottom: 1px;
+}
+   
